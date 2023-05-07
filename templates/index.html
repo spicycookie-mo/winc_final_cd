@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Farm animals</title>
+</head>
+<body>
+	<h1>Farm animals</h1>
+	{% for animal_name, sound in animals.items() %}
+		<form action="/animal/{{ animal_name }}">
+			<input type="submit" value="{{ animal_name }}">
+		</form>
+	{% endfor %}
+</body>
+</html>
