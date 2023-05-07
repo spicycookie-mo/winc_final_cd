@@ -1,0 +1,10 @@
+name: Checkout Example
+
+on: push
+
+jobs:
+  checkout-repository:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
