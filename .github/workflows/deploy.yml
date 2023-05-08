@@ -29,4 +29,4 @@ jobs:
           script: |
             cd /home/monica/farm
             git pull origin master
-            sudo systemctl restart gunicorn
+            echo "${{ secrets.PASSWORD }}" | sudo systemctl restart gunicorn
