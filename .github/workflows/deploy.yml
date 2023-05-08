@@ -2,8 +2,7 @@ name: Deploy
 
 on: 
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   run-tests:
@@ -20,7 +19,7 @@ jobs:
       - name: Run tests
         run: pytest
       - name: Copy repository contents via scp
-        uses: monica/scp-action@master
+        uses: appleboy/scp-action@master
         env:
           HOST: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.USERNAME }}
@@ -28,9 +27,9 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
         with:
           source: "."
-          target: "/home/monica/app"
+          target: "/home/monica/farm"
       - name: Executing remote command
-        uses: monica/ssh-action@master
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.USERNAME }}

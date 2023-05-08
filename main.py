@@ -18,7 +18,7 @@ def index():
     return render_template('index.html', animals=animals)
 
 # Assign a function to be called when the path `/animal/<animal_name>` is requested
-@app.route('/<animal_name>')
+@app.route('/animal/<animal_name>')
 def animal(animal_name):
     # Look up the sound for the requested animal
     sound = animals.get(animal_name)
