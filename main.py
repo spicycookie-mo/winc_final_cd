@@ -8,7 +8,8 @@ app = Flask(__name__)
 animals = {
     'cow': 'MOoooOo!',
     'sheep': 'Baaaah!',
-    'pig': 'Oink oink!'
+    'pig': 'Oink oink!',
+	'dog': 'Bark!'
 }
 
 # Assign a function to be called when the path `/` is requested
