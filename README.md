@@ -19,8 +19,9 @@
 - - I manually edited authorized_keys
 - - I started all over several times
 - - I don't know what else to do
-LE: It worked!! We have a dog! <3
-Corrections made:
+
+### LE: It worked!! We have a dog! <3
+###### ### Corrections made:
 - was using wrong PORT secret (instead of default 22 I used 8080 because that is where I set-up the app; still not sure what 22 refers to)
 - it was still not working because I was not using a PASSWORD for sudo restart gunicorn
 - then it needed the -S option
