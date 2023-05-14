@@ -39,6 +39,6 @@ jobs:
           script: |
             cd /home/monica/farm
             git pull origin master
-            #echo "${{ secrets.PASSWORD }}" | sudo -S systemctl restart farm.service
+            # echo "${{ secrets.PASSWORD }}" | sudo -S systemctl restart farm.service
 	    # allowed user monica to sun systemctl restart farm.service without password by modifying sudoers configuration file
 	    sudo systemctl restart farm.service
