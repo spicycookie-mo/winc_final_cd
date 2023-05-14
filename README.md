@@ -26,3 +26,5 @@
 - it was still not working because I was not using a PASSWORD for sudo restart gunicorn
 - then it needed the -S option
 - and it was actualy farm.service that I wanted to restart, where gunicorn is setup for this service
+
+[![Deploy](https://github.com/spicycookie-mo/winc_final_cd/actions/workflows/deploy.yml/badge.svg)](https://github.com/spicycookie-mo/winc_final_cd/actions/workflows/deploy.yml)
