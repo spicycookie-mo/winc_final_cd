@@ -26,7 +26,7 @@ jobs:
 
   deploy:
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
 
       - name: Deploy to DigitalOcean
@@ -40,6 +40,7 @@ jobs:
             cd /home/monica/farm
             git pull origin master
 	    sudo systemctl restart farm.service	
-            # echo "${{ secrets.PASSWORD }}" | sudo -S systemctl restart farm.service
+
+# echo "${{ secrets.PASSWORD }}" | sudo -S systemctl restart farm.service
 # allowed user monica to run systemctl restart farm.service without password by modifying sudoers configuration file
 	    
