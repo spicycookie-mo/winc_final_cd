@@ -9,7 +9,8 @@ animals = {
     'cow': 'MOoooOo!',
     'sheep': 'Baaaah!',
     'pig': 'Oink oink!',
-	'dog': 'Bark!'
+    'dog': 'Bark!',
+    'duck': 'Quack! Quack!'
 }
 
 # Assign a function to be called when the path `/` is requested
