@@ -11,6 +11,7 @@ animals = {
     'pig': 'Oink oink!',
     'dog': 'Bark!',
     'duck': 'Quack! Quack!'
+    'cat': 'Meow!'
 }
 
 # Assign a function to be called when the path `/` is requested
