@@ -10,7 +10,7 @@ animals = {
     'sheep': 'Baaaah!',
     'pig': 'Oink oink!',
     'dog': 'Bark!',
-    'duck': 'Quack! Quack!'
+    'duck': 'Quack! Quack!',
     'cat': 'Meow!'
 }
 
