@@ -28,3 +28,7 @@
 - and it was actualy farm.service that I wanted to restart, where gunicorn is setup for this service
 
 [![Deploy](https://github.com/spicycookie-mo/winc_final_cd/actions/workflows/deploy.yml/badge.svg)](https://github.com/spicycookie-mo/winc_final_cd/actions/workflows/deploy.yml)
+
+
+### LE2: resubmit
+Thank you for your feedback! I implemented the improvements that you suggested so I split the actions into two jobs and allowed user monica to run systemctl restart farm.service without password by modifying sudoers configuration file.
